@@ -6,6 +6,8 @@ Algoritmo ejercicio3
 	Para i<-1 Hasta num - 1 Con Paso 1 Hacer
 		Si num % i = 0 Entonces
 			no_es_primo<-Verdadero
+		SiNo
+			no_es_primo<-Falso
 		Fin Si
 	Fin Para
 	Si no_es_primo Entonces
