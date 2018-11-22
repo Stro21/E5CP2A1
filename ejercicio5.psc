@@ -1,4 +1,4 @@
-Funcion computadora <- jugada_de_la_computadora ( )
+Funcion ai <- jugada_de_la_computadora ( )
 	ai <- azar (3)
 	Si ai = 1 Entonces
 		computadora<-"piedra"
@@ -30,7 +30,7 @@ Funcion ganador ( jugador, computadora )
 	Si jugador = "tijera" y computadora = "papel" Entonces
 		Imprimir "El jugador gana ya que eligio " jugador " la computadora eligio " computadora
 	FinSi
-	Si jugador = "papel" y computadora = "papel" Entonces
+	Si jugador = "papel" y jugador = computadora Entonces
 		Imprimir "Empate ya que ambos eligieron " jugador 
 	Fin Si
 	Si jugador = "papel" y computadora = "tijera" Entonces
