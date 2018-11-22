@@ -1,13 +1,15 @@
 Algoritmo ejercicio3
 	num<-0
-	Imprimir "Ingresar un número para ver si es primo."
+	Imprimir "Ingresar un número mayor que 1 para ver si es primo."
 	Leer num
+	Mientras num < 2 Hacer
+		Imprimir "Ingresar un número mayor que 1 para ver si es primo."
+		Leer num
+	Fin Mientras
 	no_es_primo<-Falso
-	Para i<-1 Hasta num - 1 Con Paso 1 Hacer
+	Para i<-2 Hasta num - 1 Con Paso 1 Hacer
 		Si num % i = 0 Entonces
 			no_es_primo<-Verdadero
-		SiNo
-			no_es_primo<-Falso
 		Fin Si
 	Fin Para
 	Si no_es_primo Entonces
